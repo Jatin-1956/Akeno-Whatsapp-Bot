@@ -148,7 +148,7 @@ async function msg(message, color, p, time) {
 			case text.startsWith('we missed u too bot'):
 			case text.startsWith('i missed you too bot'):
 			case text.startsWith('i missed u too bot'):
-				return sclient.reply(message.from, '🤗 I missed you too 😍😘💖 and I hope I never leave again until Owner-sama does anything stupid although I will still be asleep when Jatin (Owner-sama) is asleep', message.id) }
+				return sclient.reply(message.from, '🤗 I missed you too 😍😘💖 and I hope I never leave again until Owner-sama does anything stupid although I will still be asleep when Jatin (Owner-sama) is asleep', message.id)
 				break
 			case text.startsWith("cmon akeno"):
 			case text.startsWith("c'mon akeno"):
