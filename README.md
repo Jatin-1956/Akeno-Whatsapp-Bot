@@ -215,20 +215,30 @@ After that scan the QR code using your WhatsApp in your phone!
 
 Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/Jazzboy-12/Akeno-Whatsapp-Bot/issues). 
 
-# 🔮 Original Authors 
+# 🔮 Kudos to these amazing homo sapiens
+* [`AlenSaito1`](https://github.com/AlenSaito1)
+* [`samurai3247`](https://www.instagram.com/samurai3247/)
+* [`SlavyanDesu`](https://github.com/SlavyanDesu)
+* [`uukina`](https://github.com/uukina)
+* [`MrPawNO`](https://github.com/MrPawNO)
+* [`Pahri123`](https://github.com/Pahri123)
+* [`LeviathanH`](https://github.com/LeviathanH)
+* [`ferlitopym`](https://github.com/ferlitopym)
+* [`AlvioAdjiJanuar`](https://github.com/AlvioAdjiJanuar)
+* [`VideFrelan`](https://github.com/VideFrelan)
+* [`VirusLauncher`](https://github.com/VirusLauncher)
+* [`shansekai`](https://github.com/shansekai)
+* [`Baguettou`](https://github.com/Baguettou)
+* [`HAFizh-15`](https://github.com/HAFizh-15)
+* [`TheSploit`](https://github.com/TheSploit)
+* [`rashidsiregar28`](https://github.com/rashidsiregar28)
+* [`irham01`](https://github.com/irham01)
+* [`hardiantojek93`](https://github.com/hardiantojek93)
 
-👤 **Somnath Das**
+  
+## 📚 Special Thanks to
 
-* Twitter: [@aksd3247](https://twitter.com/aksd3247)
-* Github: [@SomnathDas](https://github.com/SomnathDas)
-* Instagram: [@samurai3247](https://www.instagram.com/samurai3247/)
-
-👤 **Alen Yohannan** 
-* Twitter: 
-* GitHub: [@AlenSaito1](https://github.com/AlenSaito1)
-* Instagram:
-
-👤 **Heikal Syah Shiddiq** 
-* Twitter: https://twitter.com/sl_avyan
-* GitHub: [@SlavyanDesu](https://github.com/SlavyanDesu)
-* Instagram:
+* [`Whatsapp-Botto-Re`](https://github.com/SomnathDas/Whatsapp-Botto-Re)
+* [`BocchiBot`](https://github.com/SlavyanDesu/BocchiBot)
+* [`open-wa/wa-automate-nodejs`](https://github.com/open-wa/wa-automate-nodejs)
+* [`YogaSakti/imageToSticker`](https://github.com/YogaSakti/imageToSticker)
