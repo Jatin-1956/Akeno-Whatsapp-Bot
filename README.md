@@ -1,50 +1,60 @@
 <div align="center">
-<img src="https://img.wattpad.com/userbg/monopi123.49228.jpg" alt="Botto-re" width="500" />
+<img src="https://steamuserimages-a.akamaihd.net/ugc/164779984963620774/139538449930E8A820EDED2789C326F69A544762/" alt="Akeno" width="500" />
 
-# Whatsapp-Botto-Re
+# **Akeno Bot**
 
-> A whatsapp bot made using open-wa/wa-automate-nodejs library
+> Akeno is a multipurpose WhatsApp bot using wa-automate-nodejs library!
+>
+>
 
-## THERE'S A SUCCESSOR TO THIS PROJECT WITH FULL SUPPORT CHECK IT OUT
-## <a href="https://github.com/SomnathDas/Whatsapp-Botto-Xre"> Whatsapp-Botto-Xre </href>
-
-<p>
-  <img src ="https://camo.githubusercontent.com/4d098bb36bf96a8b9ec4821bec5866d86bca15b7/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f762f406f70656e2d77612f77612d6175746f6d6174652e7376673f636f6c6f723d677265656e" />
-  <img src="https://camo.githubusercontent.com/5c22deff6293ca12d3bc1159c6cc3a5cc9579550/68747470733a2f2f696d672e736869656c64732e696f2f6e6f64652f762f406f70656e2d77612f77612d6175746f6d617465" />
-  <a href="https://github.com/SomnathDas/Whatsapp-Botto-Re/commit-activity" target="_blank">
-    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-no-red.svg" />
-  </a>
+<p align="center">
+  <a href="https://github.com/Jazzboy-12"><img title="Author" src="https://img.shields.io/badge/Author-Jazzboy-purple.svg?style=for-the-badge&logo=github" /></a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/SomnathDas/Whatsapp-botto-re#📝 Prerequisites">Prerequisites</a> •
-  <a href="ttps://github.com/SomnathDas/Whatsapp-botto-re#🔍 Installation">Installation</a> •
-  <a href=ttps://github.com/SomnathDas/Whatsapp-botto-re#💡 Features>Features</a> •
-  <a href="ttps://github.com/SomnathDas/Whatsapp-botto-re#📝 License">License</a>
+  <a href="https://github.com/Jazzboy-12/Akeno-Whatsapp-Bot"><img title="Stars" src="https://img.shields.io/github/stars/Jazzboy-12/Akeno-Whatsapp-Bot?color=red&style=flat-square" /></a>
+  <a href="https://github.com/Jazzboy-12/Akeno-Whatsapp-Bot/network/members"><img title="Forks" src="https://img.shields.io/github/forks/Jazzboy-12/Akeno-Whatsapp-Bot?color=red&style=flat-square" /></a>
+  <a href="https://github.com/Jazzboy-12/Akeno-Whatsapp-Bot/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/Jazzboy-12/Akeno-Whatsapp-Bot?label=watchers&color=blue&style=flat-square" /></a> <br>
+  <a href="https://www.npmjs.com/package/@open-wa/wa-automate"><img src="https://img.shields.io/npm/v/@open-wa/wa-automate.svg?color=green" /></a>
+  <img src="https://img.shields.io/node/v/@open-wa/wa-automate" />
+  <img src="https://img.shields.io/badge/maintained%3F-yes-green.svg?style=flat" />
+  <img src="https://img.shields.io/github/repo-size/Jazzboy-12/Akeno-Whatsapp-Bot" /> <br>
 </p>
 
-### 🏠 [Homepage](https://ewh-dev.herokuapp.com/index.html)
-### [Whatsapp Group](https://chat.whatsapp.com/DchcgNLvkluIUe0DMf13QR) 
+<p align="center">
+  <a href="https://github.com/Jazzboy-12/Akeno-Whatsapp-Bot#requirements">Requirements</a> •
+  <a href="https://github.com/Jazzboy-12/Akeno-Whatsapp-Bot#installation">Installation</a> •
+  <a href="https://github.com/Jazzboy-12/Akeno-Whatsapp-Bot#features">Features</a> •
+  <a href="https://github.com/Jazzboy-12/Akeno-Whatsapp-Bot#original-authors ">Thanks to</a>
+</p>
 
 </div>
 
-## 📝 Prerequisites
+# Requirements
+* [Node.js](https://nodejs.org/en/)
+* [Git](https://git-scm.com/downloads)
+* [FFmpeg](https://www.gyan.dev/ffmpeg/builds/)
+* [Tesseract](https://s.id/vftesseract)
+* [ImageMagick](https://imagemagick.org/script/download.php)
+* [gif2webp](https://developers.google.com/speed/webp/download)
+* Any text editor
 
-- git
-- npm >=2.0.32
-- node >=12.18.3
+# Installation
+## 📝 Cloning this repo
+```cmd
+> git clone https://github.com/Jazzboy-12/Akeno-Whatsapp-Bot.git
+> cd Akeno-Whatsapp-Bot
+```
 
-
-## ✍️ Editing The Config
-
+## ✍️ Editing the file
 Edit `config.json` to customize the bot as needed
 ```JSON
 
 {
-    "botadmins": [], 
-    "prefix": "=",
+    "botadmins": ["96895268451@c.us"],
+    "prefix": "!",
     "uaOverride": "WhatsApp/2.2037.6 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36",
-    "botname": "Emilia"
+    "botname": "Akeno"
 }
 
 ```
@@ -54,75 +64,158 @@ Edit `config.json` to customize the bot as needed
 `uaOverride`: Your user Agent<br>
 `botname`: The name of your bot<br>
 
-## 🔍 Installation
+Edit `help.js` for bot name and display messages
 
-* [Ffmpeg](https://ffmpeg.org/download.html)
-* [ImageMagick](https://imagemagick.org/script/download.php)
-* [Libwebp](https://developers.google.com/speed/webp/download) (optional)
+## 🧾 Installing the Tesseract
+* Download the file [here](https://s.id/vftesseract).
+* After that, run downloaded file as Administrator.
+* Complete the installation.
+* Run Command Prompt as Administrator.
+* Run this command:
+```cmd
+> setx /m PATH "C:\Program Files\Tesseract-OCR;%PATH%"
+```
+It will give us a callback like `SUCCESS: specified value was saved`.
+* Now that you've Tesseract installed, verify that it's working by running this command to see version number (may need to restart Command Prompt):
+```cmd
+> tesseract -version
+```
 
-### Windows
+## 🛠️ Installing the FFmpeg
+* Download one of the available versions of FFmpeg by clicking [this link](https://www.gyan.dev/ffmpeg/builds/).
+* Extract the file to `C:\` path.
+* Rename the extracted folder to `ffmpeg`.
+* Run Command Prompt as Administrator.
+* Run this command:
+```cmd
+> setx /m PATH "C:\ffmpeg\bin;%PATH%"
+```
+It will give us a callback like `SUCCESS: specified value was saved`.
+* Now that you've FFmpeg installed, verify that it's working by running this command to see version number (may need to restart Command Prompt):
+```cmd
+> ffmpeg -version
+```
 
-[Windows Easy Installer](https://github.com/shubham8550)
+## 🕸 Installing the gif2webp
+* Download one of the available versions of FFmpeg by clicking [this link](https://developers.google.com/speed/webp/download).
+* Extract the file to `C:\` path.
+* Rename the extracted folder to `libwebp`.
+* Run Command Prompt as Administrator.
+* Run this command:
+```cmd
+> setx /m PATH "C:\libwebp\bin;%PATH%"
+```
+It will give us a callback like `SUCCESS: specified value was saved`.
+* Now that you've gif2webp installed, verify that it's working by running this command to see version number (may need to restart Command Prompt):
+```cmd
+> gif2webp -version
+```
 
-### Linux
-
-```bash
-
->git clone https://github.com/SomnathDas/Whatsapp-botto-re
+## 🔍 Installing the dependencies
+```cmd
 > npm install
-
 ```
 
-## 🟩 Starting the server
-
-```bash
-
+## 🆗 Running the bot
+Regular node:
+```cmd
 > npm start
-
 ```
 
+PM2:
+```cmd
+> pm2 start index.js
+> pm2 monit
+```
 
-## 💡 Features
+PM2 with cron job (restart after 5 hours):
+```cmd
+> pm2 start index.js --cron "* */5 * * *"
+> pm2 monit
+```
 
-### Prefix = #
+After that scan the QR code using your WhatsApp in your phone!
 
-| Features                      | Command           | Acces   |
-|:-----------------------------:|:-----------------:|:--------:|
-| Convert Images into stickers  | #sticker          | Everyone |
-| Convert Videos into stickers  | #sticker/#gsticker| Everyone |
-| Display anime info            | #anime anime name | Everyone |
-| Display Lyrics of songs       | #lyrics song name | Everyone |
-| Display Group info            | #groupinfo        | Everyone |
-| Return wallpapers             | #wallpaper term   | Everyone |
-| Scrap Subreddits [image based]| #sr subreddit     | Everyone |
-| Translate Text                | #translate [quote]| Everyone |
-| Display Covid 19 Info         | #covid country    | Everyone |
-| Make quotes                   | #quotemaker       | Everyone | 
-| Toggle NSFW                   | #act nsfw         | Admins   |
-| Greet new members             | #act welcome      | Admins   |
-| Mention all group members     | #ping text        | Admins   |
-| Promote members               | #promote @user    | Admins   |
-| Demote admins                 | #demote @user     | Admins   |
-| Display User profile          | #profile          | Everyone |
+# Features
+
+### Prefix = !
+
+| Features                           | Command           | Acces    |
+|:----------------------------------:|:-----------------:|:--------:|
+| Convert Images/Gifs into stickers  | !sticker          | Everyone |
+| Gives Caption to Images and converts them into stickers  | !stickermeme          | Everyone |
+| Triggers Images and converts them into stickers  | !triggered          | Everyone |
+| Converts stickers to images  | !toimg          | Everyone |
+| GTA styled wasted caption to images  | !wasted          | Everyone |
+| Display anime info                 | !anime <anime name> | Everyone |
+| Display Group info                 | !groupinfo        | Everyone |
+| Return anime wallpapers                  | !wallpaper <term>   | Everyone |
+| Scrap Subreddits [image based]     | !sr subreddit     | Everyone |
+| Display Covid 19 Info              | !covid country    | Everyone | 
+| Don't know why I did that              | !kissu    | Everyone | 
+| Returns pornhub styled comment              | !phcomment <Name | comment>   | Everyone | 
+| Toggle NSFW                        | !act nsfw         | Admins   |
+| Greet new members                  | !act welcome      | Admins   |
+| Mention all group members          | !ping text        | Admins   |
+| Promote members                    | !promote @user    | Admins   |
+| Demote admins                      | !demote @user     | Admins   |
+| Display User profile               | !profile / !profile @user          | Everyone |
+| Kicks the user               | !snap @user          | Admins |
+| Bot leaves the group               | !leave          | Admins |
+| Bot joins using group invite link               | !join <link>         | Bot Admin |
+| Sets status of Akeno              | !setstatus        | Bot Admin |
+| Gives english text from image               | !ocr          | Everyone |
+| Broadcasts messages to all chats of Akeno            | !bc          | Bot Admin |
 
 ### Random results
 
 | Command | Result |
 |:-------:|:------:|
-|#pokemon | Displays a random pokemon|
-|#rpaper  | Displays a random Wallpaper|
-|#waifu   | Displays a random waifu and the info |
-|#husbu   | Displays a random husbando and info |
-|#animeneko | Displays a random animeneko |
-|#neko     | Displays a random cat |
-|#doggo    | Displays a random dog |
+|!pokemon <pokemon name> | Displays a random pokemon|
+|!rpaper  | Displays a random Wallpaper|
+|!waifu   | Displays a random waifu and the info |
+|!husbu / !husbando   | Displays a random husbando and info |
+|!animeneko | Displays a random animeneko |
+|!cat     | Displays a random cat |
+|!doggo    | Displays a random dog |
+|!dogesticker    | Displays a random doge sticker |
+|!wholesome    | Displays a random wholesome sticker |
+|!animesticker    | Displays a random anime character sticker |
+|!tod            | Truth or dare game |
+|!pickup            | Pickup lines |
 
+### NSFW commands
+
+| Command |
+|:-------:|
+|!porn      |
+|!gonewild  |
+|!lewds     |
+|!waifu18   |
+|!fetish    |
+|!hentai    |
+|!lewdavatar|
+|!yuri      |
+|femdomanime|
+|!kuni      |
+|!neko      |
+|!cumsluts  |
+|!classic   |
+|!bj        |
+|!pussy     |
+|!nkemono   |
+|!keta      |
+|!holo      |
+|!cumarts   |
+|!kitsune   |
+|!trap      |
+|!spank     |
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/SomnathDas/Whatsapp-Botto-Re/issues). 
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/Jazzboy-12/Akeno-Whatsapp-Bot/issues). 
 
-## 🔮 Original Authors 
+# 🔮 Original Authors 
 
 👤 **Somnath Das**
 
@@ -135,12 +228,7 @@ Contributions, issues and feature requests are welcome!<br />Feel free to check 
 * GitHub: [@AlenSaito1](https://github.com/AlenSaito1)
 * Instagram:
 
-## 📝 License
-
-This project is [GNU General Public License v3.0](https://github.com/SomnathDas/Whatsapp-Botto-Re/blob/master/LICENSE) licensed.
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
-***
+👤 **Heikal Syah Shiddiq** 
+* Twitter: https://twitter.com/sl_avyan
+* GitHub: [@SlavyanDesu](https://github.com/SlavyanDesu)
+* Instagram:
