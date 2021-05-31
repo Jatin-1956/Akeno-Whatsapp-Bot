@@ -97,7 +97,7 @@ It will give us a callback like `SUCCESS: specified value was saved`.
 ```
 
 ## 🕸 Installing the gif2webp
-* Download one of the available versions of FFmpeg by clicking [this link](https://developers.google.com/speed/webp/download).
+* Download one of the available versions of gif2webp by clicking [this link](https://developers.google.com/speed/webp/download).
 * Extract the file to `C:\` path.
 * Rename the extracted folder to `libwebp`.
 * Run Command Prompt as Administrator.
