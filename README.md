@@ -47,22 +47,7 @@
 ```
 
 ## ✍️ Editing the file
-Edit `config.json` to customize the bot as needed
-```JSON
-
-{
-    "botadmins": ["96895268451@c.us"],
-    "prefix": "!",
-    "uaOverride": "WhatsApp/2.2037.6 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36",
-    "botname": "Akeno"
-}
-
-```
-
-`botadmins`: Put the array of [contactIds](https://docs.openwa.dev/globals.html#contactid) of the people who you want be bot admins <br>
-`prefix`: The prefix of the bot <br>
-`uaOverride`: Your user Agent<br>
-`botname`: The name of your bot<br>
+Edit `msgHandler.js` to change the prefix and bot admin of the bot as needed
 
 Edit `help.js` for bot name and display messages
 
