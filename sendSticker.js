@@ -1,14 +1,14 @@
-const { decryptMedia } = require('@open-wa/wa-decrypt')
-const fs = require('fs-extra')
-const mime = require('mime-types')
-const nrc = require('node-run-cmd')
-const sizeOf = require('image-size')
-const gifFrames = require('gif-frames')
-const Jimp = require('jimp')
-const { GifFrame, GifUtil, GifCodec } = require('gifwrap')
-const queuejs = require('./queue')
+import { decryptMedia } from '@open-wa/wa-decrypt' 
+import fs from 'fs-extra' 
+import mime from 'mime-types' 
+import nrc from 'node-run-cmd' 
+import sizeOf from 'image-size' 
+import gifFrames from 'gif-frames' 
+import Jimp from 'jimp' 
+import { GifFrame, GifUtil, GifCodec } from 'gifwrap' 
+import { sendAnimatedSticker } from './queue.js' 
 
-module.exports.sendAnimatedSticker = async function (message) {
+export const sendAnimatedStickers = async function (message) {
  try {
    console.log(sendingAnimatedSticker)
   if (sendingAnimatedSticker.indexOf(message.from) > -1) {
@@ -111,7 +111,7 @@ module.exports.sendAnimatedSticker = async function (message) {
     }
   }
   if (queueAnimatedSticker.length != 0) {
-    queuejs.sendAnimatedSticker(message)
+    sendAnimatedSticker(message)
   }
   delete require.cache[require.resolve('./queue')]
 
