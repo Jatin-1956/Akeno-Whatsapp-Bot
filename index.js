@@ -1,7 +1,15 @@
-const { create } = require('@open-wa/wa-automate')
-const msgHandler = require('./msgHandler')
-const fs = require('fs-extra')
-const config = JSON.parse(fs.readFileSync('./config.json'))
+import { create } from '@open-wa/wa-automate'
+import { decryptMedia } from '@open-wa/wa-decrypt'
+import msgHandler from './msgHandler.js'
+import fs from 'fs-extra'
+const config = JSON.parse(fs.readFileSync('config.json'))
+/*const grpdollar = client.chat.groupMetadata.id = '96895268451-1621274058@g.us'
+if(grpdollar)
+{
+	const config = JSON.parse(fs.readFileSync('./configdol.json'))
+} else {
+		const config = JSON.parse(fs.readFileSync('./config.json'))
+}*/
 const serverOption = {
     headless: true,
     cacheEnabled: false,
@@ -28,17 +36,17 @@ if (opsys === 'win32' || opsys === 'win64') {
 
 const startServer = async (client) => {
         global.sclient = client
-	    sendingSticker = []
-        queueSticker = []
-        botadmins = config.botadmins
-        prefix = config.prefix
-        botname = config.botname
+	    const sendingSticker = []
+        const queueSticker = []
+        var botadmins = config.botadmins
+        var botname = config.botname
+		var prefix = config.prefix
     	global.sendingAnimatedSticker = []
     	global.queueAnimatedSticker = []
     	global.amdownloaden = []
     	global.queuemp3 = []
     	global.queuemp4 = []
-    	spamarr = []
+    	const spamarr = []
         console.log('[SERVER] Server Started!')
         // Force it to keep the current session
         client.onStateChanged((state) => {
@@ -58,7 +66,7 @@ const startServer = async (client) => {
             	client.sendText(chat.id, `This group only has ${totalMem} members, Its needs atleast 30 members to activate the services`).then(() => client.leaveGroup(chat.id))
             	client.deleteChat(chat.id)
             } else {
-                client.sendText(chat.groupMetadata.id, `Thanks for adding me *${chat.contact.name}*. Use #help to see the usable commands`)
+                client.sendText(chat.groupMetadata.id, `Thanks for adding me, Senpai. Use !help to see the usable commands`)
             }
         })
 
