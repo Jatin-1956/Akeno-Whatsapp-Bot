@@ -1,6 +1,6 @@
-const sendSticker = require('./sendSticker')
+import { sendAnimatedStickers } from './sendSticker.js'
 
-exports.mp3 = async function (message) {
+export const mp3 = async function (message) {
   for (let i = 0; i < queuemp3.length; i++) {
     if (queuemp3[i].from == message.from) {
       console.log(queuemp3[i].from)
@@ -10,7 +10,7 @@ exports.mp3 = async function (message) {
   }
 }
 
-exports.mp4 = async function (message) {
+export const mp4 = async function (message) {
   for (let i = 0; i < queuemp4.length; i++) {
     if (queuemp4[i].from == message.from) {
       console.log(queuemp4[i].from)
@@ -21,16 +21,16 @@ exports.mp4 = async function (message) {
   }
 }
 
-exports.sendSticker = async function (message) {
+export const sendStickers = async function (message) {
   for (let i = 0; i < queueSticker.length; i++) {
     if (queueSticker[i].from == message.from) {
       console.log(queueSticker[i].from)
-      sendSticker.sendSticker(queueSticker[i])
+      sendSticker.sendStickers(queueSticker[i])
       queueSticker.splice(i, 1)
     }
   }
 }
-exports.sendAnimatedSticker = async function (message) {
+export const sendAnimatedSticker = async function (message) {
   for (let i = 0; i < queueAnimatedSticker.length; i++) {
     if (queueAnimatedSticker[i].from == message.from) {
       console.log(queueAnimatedSticker[i].from)
