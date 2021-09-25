@@ -33,8 +33,8 @@ const nsfwgrp = JSON.parse(fs.readFileSync('./lib/nsfwg.json'))
 const ban = JSON.parse(fs.readFileSync('./lib/banned.json'))
 const cr = JSON.parse(fs.readFileSync('./lib/cr.json'))
 const flirty = JSON.parse(fs.readFileSync('./lib/flirty.json'))
-const prefix = '!';
-const botadmins = '968595268451';
+const prefix = "!";
+const botadmins = ["96895268451@c.us","917044550372@c.us","917355164558@c.us"];
 const errorurl = 'https://steamuserimages-a.akamaihd.net/ugc/954087817129084207/5B7E46EE484181A676C02DFCAD48ECB1C74BC423/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false'
 const errorurl2 = 'https://steamuserimages-a.akamaihd.net/ugc/954087817129084207/5B7E46EE484181A676C02DFCAD48ECB1C74BC423/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false'
 const ocrconf = {
@@ -64,6 +64,7 @@ export default async function msgHandler (client, message){
         body = (type === 'chat' && body.startsWith(prefix)) ? body : ((type === 'image' && caption || type === 'video' && caption) && caption.startsWith(prefix)) ? caption : ''
         const command = body.slice(prefix.length).trim().split(/ +/).shift().toLowerCase()
         const args = body.slice(prefix.length).trim().split(/ +/).slice(1)
+        var arg = []
 		const ar = args.map((v) => v.toLowerCase())
         const isCmd = body.startsWith(prefix)
 	    const isRule = ruleArr.includes(chat.id)
@@ -833,7 +834,7 @@ ${desc}`)
             const isLink = link.match(/(https:\/\/chat.whatsapp.com)/gi)
             const check = await client.inviteInfo(link)
             if (!isLink) return client.reply(from, 'Where\'s the link?', message.id)
-            if (check.size < minMem) return client.reply(from, 'The group does not have 30+ members', message.id)
+            //if (check.size < minMem) return client.reply(from, 'The group does not have 30+ members', message.id)
             await client.joinGroupViaLink(link).then( async () => {
                 await client.reply(from, '*Joined* ✨️', message.id)
             }).catch(error => {
@@ -1946,10 +1947,10 @@ ${desc}`)
         case 'info':
             client.reply(from, info(), message.id)
             break
-        case 'new':
+/*        case 'new':
             client.reply(from, newbot(), message.id)
             break
-/*		case 'new':
+		case 'new':
 			client.reply(from, `Type *${prefix}help* to see details of commands😄 \n\n*STICKER RELATED*\n\n_${prefix}stickermeme_\n_${prefix}triggered_\n_${prefix}wasted_\n_${prefix}dogesticker_\n_${prefix}wholesome_\n_${prefix}animesticker_ \n\n\n*IMAGE RELATED* \n\n_${prefix}foxy_\n_${prefix}kemono_\n_${prefix}cuddle_\n_${prefix}gecg_\n_${prefix}smug_\n_${prefix}baka_\n_${prefix}tickle_\n_${prefix}slap_\n_${prefix}poke_\n_${prefix}pat_\n_${prefix}pat_\n_${prefix}kiss_\n_${prefix}hug_ \n\n\n*MISCELLANEOUS* \n\n_${prefix}ocr_\n_${prefix}tod_\n_${prefix}phcomment_\n_${prefix}nightcore_\n_${prefix}kissu_ \n\n\n*NSFW* \n\nType _${prefix}nsfw_ for NSFW related commands`, message.id)
 			break*/
 		case 'nsfw':
