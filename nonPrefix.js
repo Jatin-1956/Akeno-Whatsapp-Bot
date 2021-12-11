@@ -1,6 +1,5 @@
-module.exports = { msg }
-const fun = require('./lib/fun.js')
-async function msg(message, color, p, time) {
+import { flirty, pickup } from './lib/fun.js'
+export async function msg(message, color, p, time) {
 	if (message.type == 'chat') {
 		const text = message.body.toLowerCase() 
 		switch (true) {
@@ -170,7 +169,7 @@ async function msg(message, color, p, time) {
 			case text.startsWith("what's up slave"):
 			case text.startsWith("whats up bot"):
 			case text.startsWith("what's up bot"):
-					fun.flirty()
+					flirty()
                     .then(async (body) => {
                         const tod = body.split('\n')
                         const randomTod = tod[Math.floor(Math.random() * tod.length)]
@@ -186,7 +185,7 @@ async function msg(message, color, p, time) {
 			case text.startsWith('pick me up slave'):
 			case text.startsWith('pick me up akeno'):
 			case text.startsWith('pick me up bot'):
-					fun.pickup()
+					pickup()
                     .then(async (body) => {
                         const tod = body.split('\n')
                         const randomTod = tod[Math.floor(Math.random() * tod.length)]
@@ -201,8 +200,6 @@ async function msg(message, color, p, time) {
 				break*/
 		}
 	}
-	if (p) return console.log('[RECV]', color(time, 'yellow'), 'Message from', color(message.sender.pushname))
-	if (!p) return console.log('[RECV]', color(time, 'yellow'), 'Message from', color(message.sender.pushname), 'in', color(message.chat['name']))
+//	if (p) return console.log('[RECV]', color(time, 'yellow'), 'Message from', color(message.sender.pushname))
+//	if (!p) return console.log('[RECV]', color(time, 'yellow'), 'Message from', color(message.sender.pushname), 'in', color(message.chat['name']))
 }
-
-			
