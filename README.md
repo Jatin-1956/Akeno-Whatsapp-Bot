@@ -169,33 +169,6 @@ After that scan the QR code using your WhatsApp in your phone!
 |!tod            | Truth or dare game |
 |!pickup            | Pickup lines |
 
-### NSFW commands
-
-| Command |
-|:-------:|
-|!porn      |
-|!gonewild  |
-|!lewds     |
-|!waifu18   |
-|!fetish    |
-|!hentai    |
-|!lewdavatar|
-|!yuri      |
-|femdomanime|
-|!kuni      |
-|!neko      |
-|!cumsluts  |
-|!classic   |
-|!bj        |
-|!pussy     |
-|!nkemono   |
-|!keta      |
-|!holo      |
-|!cumarts   |
-|!kitsune   |
-|!trap      |
-|!spank     |
-
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/Jazzboy-12/Akeno-Whatsapp-Bot/issues). 
