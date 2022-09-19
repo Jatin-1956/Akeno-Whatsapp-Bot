@@ -137,9 +137,6 @@ After that scan the QR code using your WhatsApp in your phone!
 | Return anime wallpapers                  | !wallpaper <term>   | Everyone |
 | Scrap Subreddits [image based]     | !sr subreddit     | Everyone |
 | Display Covid 19 Info              | !covid country    | Everyone | 
-| Don't know why I did that              | !kissu    | Everyone | 
-| Returns pornhub styled comment              | !phcomment <Name | comment>   | Everyone | 
-| Toggle NSFW                        | !act nsfw         | Admins   |
 | Greet new members                  | !act welcome      | Admins   |
 | Mention all group members          | !ping text        | Admins   |
 | Promote members                    | !promote @user    | Admins   |
